@@ -1,0 +1,6 @@
+node_modules/
+.shadow-cljs/
+.clj-kondo/.cache
+.lsp/
+.portal/
+my-client/public/js/

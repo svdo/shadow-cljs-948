@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[lilactown/helix "0.1.4"]]
+
+ :builds
+ {:my-client 
+  {:target :browser
+   :output-dir "my-client/public/js"
+   :modules {:about {:entries [my-client.about.core]}}
+   :dev {:compiler-options {:output-feature-set :es8
+                            :infer-externs :auto}}
+   :devtools {:http-root "my-client/public"
+              :http-port 8989
+              :reload-strategy :full
+              :preloads []}}}}
+   ;;:release {:compiler-options {:output-feature-set :es5}}
+   

@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "devDependencies": {
+        "shadow-cljs": "^2.16.2"
+    },
+    "dependencies": {
+        "bootstrap": "^5.1.1",
+        "react": "^16.13.1",
+        "react-bootstrap": "^2.0.0",
+        "react-dom": "^16.13.1",
+        "react-refresh": "0.8.1"
+    },
+    "scripts": {
+        "start": "npx shadow-cljs watch :my-client",
+        "release": "npx shadow-cljs release :my-client",
+        "serve": "npx shadow-cljs server"
+    }
+}
